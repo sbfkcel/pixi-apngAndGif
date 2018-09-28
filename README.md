@@ -1,6 +1,11 @@
+# Pixi-apngAndGif
+
 Let Pixi.js support apng, gif images. And allow control of its operation.
 
-[**Pixi-apngAndGif.js Use the demo**](http://jsbin.com/nodeto/edit?html,js,output)
+## DEMO
+
+- Global [**Pixi-apngAndGif.js Use the demo**](http://jsbin.com/nodeto/edit?html,js,output)
+- 中国大陆 [**Pixi-apngAndGif.js Use the demo**](https://jsrun.net/yXhKp)
 
 # USE
 
