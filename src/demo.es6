@@ -1,4 +1,4 @@
-import $apngAndGif from './Pixi-apngAndGif'
+import $apngAndGif from './PixiApngAndGif'
 
 const app = new PIXI.Application();
 

@@ -1,7 +1,7 @@
 {
   "name": "pixi-apngandgif",
   "version": "1.0.0",
-  "description": "",
+  "description": "Let pixi.js support apng, gif images",
   "main": "./dist/Pixi-apngAndGif.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/sbfkcel/pixi-apngAndGif.git"
   },
+  "keywords": [
+  	"pixi",
+    "apng",
+    "png",
+    "gif",
+    "canvas"
+  ],
   "author": "sbfkcel@163.com",
   "license": "MIT",
   "bugs": {
