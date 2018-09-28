@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pixi-apngAndGif demo</title>
+    <meta name="signature" content="Project:pixi-apngAndGi, Create:FWS 2018.09.28 15:29, Update:FWS 2018.09.28 18:27">
+</head>
+<body>
+    <h3>gif：</h3>
+    <button onclick="gif.play()">play</button>
+    <button onclick="gif.play(3)">Play 3 times</button>
+    <button onclick="gif.pause()">pause</button>
+    <button onclick="gif.stop()">stop</button>
+    <button onclick="gif.jumpToFrame(0)">Jump to the first frame</button>
+    <button onclick="alert(gif.getDuration())">get Duration</button>
+    <button onclick="alert(gif.getFramesLength())">get getFrames num</button>
+    <hr>
+    <h3>apng：</h3>
+    <button onclick="apng.play()">play</button>
+    <button onclick="apng.play(3)">Play 3 times</button>
+    <button onclick="apng.pause()">pause</button>
+    <button onclick="apng.stop()">stop</button>
+    <button onclick="apng.jumpToFrame(0)">Jump to the first frame</button>
+    <button onclick="alert(apng.getDuration())">get Duration</button>
+    <button onclick="alert(apng.getFramesLength())">get getFrames num</button>
+    <hr>
+    
+    <!-- <script src="https://pixijs.download/v4.8.2/pixi.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/pixi.js/4.8.2/pixi.min.js"></script>
+    <script src="./demo.js"></script>
+</body>
+</html>

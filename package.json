@@ -1,0 +1,22 @@
+{
+  "name": "pixi-apngandgif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/Pixi-apngAndGif.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbfkcel/pixi-apngAndGif.git"
+  },
+  "author": "sbfkcel@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbfkcel/pixi-apngAndGif/issues"
+  },
+  "homepage": "https://github.com/sbfkcel/pixi-apngAndGif#readme",
+  "dependencies": {
+    "pako": "^1.0.6"
+  }
+}
