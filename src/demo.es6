@@ -5,8 +5,8 @@ const app = new PIXI.Application();
 const loader = PIXI.loader,
     title = document.title,
     loadOption = {
-        loadType: PIXI.loaders.Resource.LOAD_TYPE.XHR,
-        xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER,
+        loadType: PIXI.LoaderResource.LOAD_TYPE.XHR,
+        xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.BUFFER,
         crossOrigin:''
     },
     imgs = {

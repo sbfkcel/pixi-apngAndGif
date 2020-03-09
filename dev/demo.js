@@ -8099,7 +8099,7 @@
                 time: 0
             };
             // 循环执行器
-            _ts.ticker = new PIXI.ticker.Ticker();
+            _ts.ticker = new PIXI.Ticker();
             _ts.ticker.stop();
             // 精灵
             _ts.sprite = this.createSprite(esource, resources);
@@ -8127,7 +8127,7 @@
             // 为轮循执行器添加一个操作
             if (!_ts.temp.tickerIsAdd) {
                 _ts.ticker.add(function (deltaTime) {
-                    var elapsed = PIXI.ticker.shared.elapsedMS;
+                    var elapsed = PIXI.Ticker.shared.elapsedMS;
                     time += elapsed;
                     // 当帧停留时间已达到间隔帧率时播放下一帧
                     if (time > _ts.framesDelay[status.frame]) {
@@ -8286,7 +8286,7 @@
                 canvas.width = pngWidth;
                 canvas.height = pngHeight;
                 ctx = canvas.getContext('2d');
-                spriteSheet = new PIXI.BaseTexture.fromCanvas(canvas);
+                spriteSheet = new PIXI.BaseTexture.from(canvas);
                 imageData = ctx.createImageData(pngWidth, pngHeight);
                 imageData.data.set(data);
                 ctx.putImageData(imageData, 0, 0);
@@ -8319,7 +8319,7 @@
                 gif.decodeAndBlitFrameRGBA(i, imageData.data);
                 //将上面创建的图像数据放回到画面上
                 ctx.putImageData(imageData, 0, 0);
-                spriteSheet = new PIXI.BaseTexture.fromCanvas(canvas);
+                spriteSheet = new PIXI.BaseTexture.from(canvas);
                 obj.textures.push(new PIXI.Texture(spriteSheet, new PIXI.Rectangle(0, 0, gifWidth, gifHeight)));
             }
             // document.body.appendChild(canvas);
@@ -8330,8 +8330,8 @@
 
     var app = new PIXI.Application();
     var loader = PIXI.loader, title = document.title, loadOption = {
-        loadType: PIXI.loaders.Resource.LOAD_TYPE.XHR,
-        xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER,
+        loadType: PIXI.LoaderResource.LOAD_TYPE.XHR,
+        xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.BUFFER,
         crossOrigin: ''
     }, imgs = {
         gif: 'http://isparta.github.io/compare/image/dongtai/gif/1.gif',
