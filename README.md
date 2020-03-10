@@ -12,16 +12,21 @@ Let Pixi.js support apng, gif images. And allow control of its operation.
 ### ES6
 
 ```bash
+// Support pixi4.0
+npm install pixi-apngandgif@1.0.0
+
+// Support pixi5.0+
 npm install pixi-apngandgif
 ```
+
 ```javascript
 import PixiApngAndGif from 'pixi-apngandgif'
 
 const app = new PIXI.Application();
-const loader = PIXI.loader,
+const loader = PIXI.Loader.shared,
     loadOption = {
-        loadType: PIXI.loaders.Resource.LOAD_TYPE.XHR,
-        xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER,
+        loadType: PIXI.LoaderResource.LOAD_TYPE.XHR,
+        xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.BUFFER,
         crossOrigin:''
     },
     imgs = {
@@ -63,10 +68,10 @@ document.body.appendChild(app.view);
 
 ```javascript
 const app = new PIXI.Application();
-const loader = PIXI.loader,
+const loader = PIXI.Loader.shared,
     loadOption = {
-        loadType: PIXI.loaders.Resource.LOAD_TYPE.XHR,
-        xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER,
+        loadType: PIXI.LoaderResource.LOAD_TYPE.XHR,
+        xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.BUFFER,
         crossOrigin:''
     },
     imgs = {

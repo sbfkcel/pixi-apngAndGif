@@ -351,7 +351,7 @@ class Image{
             //将上面创建的图像数据放回到画面上
             ctx.putImageData(imageData, 0, 0);
 
-            spriteSheet = new PIXI.BaseTexture.fromCanvas(canvas);
+            spriteSheet = new PIXI.BaseTexture.from(canvas);
             obj.textures.push(new PIXI.Texture(spriteSheet,new PIXI.Rectangle(0, 0, gifWidth, gifHeight)));
         };
         // document.body.appendChild(canvas);
