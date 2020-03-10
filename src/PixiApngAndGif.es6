@@ -41,7 +41,7 @@ class Image{
         };
         
         // 循环执行器
-        _ts.ticker = new PIXI.ticker.Ticker();
+        _ts.ticker = new PIXI.Ticker();
         _ts.ticker.stop();
 
         // 精灵
@@ -79,7 +79,7 @@ class Image{
         // 为轮循执行器添加一个操作
         if(!_ts.temp.tickerIsAdd){
             _ts.ticker.add(deltaTime => {
-                let elapsed = PIXI.ticker.shared.elapsedMS;
+                let elapsed = PIXI.Ticker.shared.elapsedMS;
                 time+=elapsed;
 
                 // 当帧停留时间已达到间隔帧率时播放下一帧
@@ -293,7 +293,7 @@ class Image{
             canvas.width = pngWidth;
             canvas.height = pngHeight;
             ctx = canvas.getContext('2d');
-            spriteSheet = new PIXI.BaseTexture.fromCanvas(canvas);
+            spriteSheet = new PIXI.BaseTexture.from(canvas);
             
             imageData = ctx.createImageData(pngWidth,pngHeight);
             imageData.data.set(data);
