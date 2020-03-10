@@ -12,10 +12,10 @@ Let Pixi.js support apng, gif images. And allow control of its operation.
 ### ES6
 
 ```bash
-// Support pixi4.0
+# Support pixi4.0
 npm install pixi-apngandgif@1.0.0
 
-// Support pixi5.0+
+# Support pixi5.0+
 npm install pixi-apngandgif
 ```
 
