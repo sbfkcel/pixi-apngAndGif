@@ -1,6 +1,6 @@
 {
   "name": "pixi-apngandgif",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Let pixi.js support apng, gif images",
   "main": "./dist/PixiApngAndGif.js",
   "scripts": {

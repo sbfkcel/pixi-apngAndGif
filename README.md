@@ -60,7 +60,7 @@ document.body.appendChild(app.view);
 ### Browser
 
 ```html
-<script src="https://cdn.staticfile.org/pixi.js/4.8.2/pixi.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
 <script src="https://cdn.rawgit.com/sbfkcel/pixi-apngAndGif/master/dist/PixiApngAndGif.js"></script>
 ```
 
