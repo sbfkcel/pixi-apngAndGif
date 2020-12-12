@@ -1,6 +1,7 @@
 import $getExeName from './lib/_getExeName'        // 用于获取路径扩展名
 import $omggif from './lib/_omggif'                // gif图片编解码
 import $upngjs from './lib/_upng'                  // png图片编解码
+import * as PIXI from "pixi.js";
 
 class Image{
     constructor(esource,resources){
